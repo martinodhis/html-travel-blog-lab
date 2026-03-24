@@ -1,0 +1,107 @@
+/* Style the body for clean typography and spacing */
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  margin: 20px;
+  background-color: #f0f8ff; /* Light, calming background */
+  color: #333;
+  padding-top: 70px; /* push content down by header height */
+}
+html {
+  scroll-behavior: smooth; /* Smooth scrolling for better user experience */
+}
+
+
+/* Styling header */
+header {
+    background-color: #0a1f44;
+    color: #fff;
+    padding: 15px 30px;
+    display: flex; /* Keeps links horizontal */
+    justify-content: flex-start; /* Pack everything to the left side */
+    align-items: center;
+    gap: 40px; /* Space between Logo and Menu links */
+    position: fixed;
+    z-index: 1000;
+    position: fixed;      /* This keeps the header stuck to the screen */
+  top: 0;               /* Aligns it to the very top */
+  left: 0;              /* Aligns it to the very left */
+  width:100%;            /* Makes it stretch across the entire width */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    height: 70px; /* define a fixed height for the header */
+  box-sizing: border-box;
+}
+
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    width: 50px;
+    border-radius: 60px;
+}
+.logo img {
+    width: 100%;
+    height: auto;
+    border-radius: 100%;   /* Makes it perfectly round */
+    0bject-fit: cover;  /* Prevents image squishing */
+    border: 2px solid #fff;  /* White ring around logo */
+    transition: transform o.3s ease,box-shadow o.3s ease;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 10px;
+}
+nav ul li {
+   text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: inherit;
+    transition: color 0.3s;
+}
+
+/* Style main headings for emphasis */
+h1, h2 {
+  color: #2c3e50;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* Style images for responsiveness and aesthetic */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin: 10px auto;
+}
+
+/* Style the list of images for a flexible gallery layout */
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  list-style: none;
+}
+
+/* Style each list item for spacing */
+li {
+  margin: 10px;
+}
+
+/* Style links for clarity and interaction */
+a {
+  color: #2980b9;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
